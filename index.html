@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julien Heng</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
     <header class="header">
@@ -24,9 +28,6 @@
         <section id="hero" class="hero">
             <h2 class="hero__title">Bonjour, je m'appelle Julien</h2>
             <p class="hero__subtitle">Je suis un <span class="hero__word text-bold">Développeur web</span></p>
-            <div class="hero__avatar">
-                <img src="./img/avatar.jpg" alt="Avatar" class="hero__image">
-            </div>
             <ul class="hero__list">
                 <li class="hero__item"><a href="https://github.com/developor45ju" class="hero__link"><i class="fa-brands fa-github hero__icon"></i>GitHub</a></li>
                 <li class="hero__item"><a href="https://www.linkedin.com/in/julien-heng-developpeur-web" class="hero__link"><i class="fa-brands fa-linkedin hero__icon"></i>Linkedin</a></li>
@@ -35,24 +36,45 @@
 
         <section id="about" class="about">
             <h2 class="about__title">À propos de moi</h2>
-            <p class="about__description">Je suis passionné par <span class="text-bold">l'informatique</span> et <span class="text-bold">le développement web</span>. Je suis également un grand fan de jeux vidéo.</p>
+            <p class="about__description">J'ai actuellement <span class="text-bold years-old">23</span> ans. J'ai suvi une formation de Développeur web durant 2 ans, en alternance. Je suis passionné par <span class="text-bold">l'informatique</span> et <span class="text-bold">le développement web</span>. Je suis également un grand fan de jeux vidéo.</p>
         </section>
 
         <section id="skills" class="skills">
             <h2 class="skills__title">Compétences</h2>
             <ul class="skills__list">
-                <li class="skills__item">HTML</li>
-                <li class="skills__item">CSS</li>
-                <li class="skills__item">JavaScript</li>
+                <li class="skills__item"><i class="fa-brands fa-node-js fa-10x"></i></li>
+                <li class="skills__item"><i class="fa-brands fa-react fa-10x"></i></li>
+                <li class="skills__item"><i class="fa-brands fa-php fa-10x"></i></li>
             </ul>
         </section>
 
         <section id="projects" class="projects">
             <h2 class="projects__title">Projets</h2>
             <ul class="projects__list">
-                <li class="projects__item">Projet 1</li>
-                <li class="projects__item">Projet 2</li>
-                <li class="projects__item">Projet 3</li>
+                <li class="projects__item">
+                    <a class="projects__link" href="https://developor45ju.github.io/JulienHeng_2_30082021/">
+                        <img src="./images/reservia.png" alt="Projet 1" class="projects__image" />
+                        <h3 class="projects__name">Reservia</h3>
+                        <p class="projects__description">Ce projet consistait à <span class="text-bold">responsive design</span> à partir d'une maquette.</p>
+                        <p class="projects__technologies"><span class="text-bold">Technologies utilisées:</span> HTML, CSS</p>
+                    </a>
+                </li>
+                <li class="projects__item">
+                    <a class="projects__link" href="https://developor45ju.github.io/front-P5OC/html/index.html">
+                        <img src="./images/kanap.png" alt="Projet 2" class="projects__image" />
+                        <h3 class="projects__name">Kanap</h3>
+                        <p class="projects__description">Ce projet consistait à implémenter <span class="text-bold">les fonctionnalités</span> pour un site e-commerce</p>
+                        <p class="projects__technologies"><span class="text-bold">Technologies utilisées:</span> HTML, CSS, JS, NodeJS</p>
+                    </a>
+                </li>
+                <li class="projects__item">
+                    <a class="projects__link" href="https://developor45ju.github.io/kasa-oc-p7/#/">
+                        <img src="./images/kasa.png" alt="Projet 3" class="projects__image" />
+                        <h3 class="projects__name">Kasa</h3>
+                        <p class="projects__description">Ce projet consistait à faire du responsive design avec <span class="text-bold">Framework</span> partir d'un prototype.</p>
+                        <p class="projects__technologies"><span class="text-bold">Technologies utilisées:</span> React, CSS, SASS</p>
+                    </a>
+                </li>
             </ul>
         </section>
 

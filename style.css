@@ -1,0 +1,242 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 10px 15px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav__link:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Hero section */
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10em;
+    height: 100vh;
+    background-image: url('./images/background-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero__title,
+.hero__subtitle,
+.hero__avatar,
+.hero__list {
+    z-index: 2;
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.hero__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.hero__list {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__item {
+    list-style: none;
+}
+
+.hero__link {
+    display: flex;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 10px 15px;
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    gap: 10px;
+}
+
+/* About section */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 10em;
+}
+
+.about__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about__description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills section */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 10em;
+}
+
+.skills__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills__item {
+    list-style: none;
+}
+
+/* Projects section */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 10em;
+}
+
+.projects__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projects__item {
+    list-style: none;
+}
+
+.projects__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projects__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.projects__link:hover {
+    background-color: var(--background-color);
+    border-color: var(--accent-color);
+}
+
+/* Contact section */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 10em;
+}
+
+.contact__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
