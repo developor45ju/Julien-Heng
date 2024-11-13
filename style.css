@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 20px;
 }
 
+.nav__toggle {
+    display: none;
+}
+
 .nav__list {
     display: flex;
     gap: 20px;
@@ -164,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
@@ -239,4 +244,114 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-bold {
     font-weight: bold;
+}
+
+/* Tablet: max 768px */
+
+@media screen and (max-width: 768px) {
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .nav__list--hidden {
+        display: none;
+    }
+
+    .nav__list--visible {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 20;
+        padding-top: 60px;
+        background-color: var(--background-color);
+        height: 100vh;
+        width: 25%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .nav__list::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        right: 25vw;
+        width: 85vw;
+        height: 100vh;
+    }
+
+    .nav__toggle {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+
+    .nav__link {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--text-color);
+        font-weight: 700;
+    }
+
+    .nav__link:active {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .hero {
+        padding: 0 2em;
+    }
+
+    .about {
+        padding: 2em;
+    }
+
+    .skills {
+        padding: 2em;
+    }
+
+    .projects {
+        padding: 2em;
+    }
+
+    .contact {
+        padding: 2em;
+    }
+}
+
+/* Mobile: max 425px */
+
+@media screen and (max-width: 425px) {
+    .nav__list--visible {
+        width: 100%;
+    }
+
+    .nav__list::before {
+        display: none;
+    }
+
+    .hero {
+        padding: 0 1em;
+    }
+
+    .about {
+        padding: 1em;
+    }
+
+    .skills {
+        padding: 1em;
+    }
+
+    .projects {
+        padding: 1em;
+    }
+
+    .contact {
+        padding: 1em;
+    }
 }
